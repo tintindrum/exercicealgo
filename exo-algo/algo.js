@@ -141,11 +141,20 @@ while (a <= 90 ) { /* on lance la boucle */
 
 /* echo ("<br>\n<br>\n<br>\n====== EXO n°11 ======<br>\n<br>\n");
 echo ("Afficher une variable entrée manuellement par l'utilisateur<br>\n"); */
+var N=prompt("choisissez un nombre",'tapez votre nombre ici');
+document.write("vous avez choisi le nombre "+N);
 
 
 /* echo ("<br>\n<br>\n<br>\n====== EXO n°12 ======<br>\n<br>\n");
 echo ("Demander à l'utilisateur d'entrer un nombre entier et afficher si ce chiffre est pair ou impair<br>\n"); */
 
+var N=prompt("choisissez un nombre",'tapez votre nombre ici');
+ 
+    if (N%2==0) {
+        console.log("Votre chiffre est pair")
+    } else {
+        console.log("Votre chiffre est impair")
+    }
 
 /* Code à ajouter ci-dessous */
 
@@ -155,7 +164,15 @@ echo ("Demander à l'utilisateur d'entrer un nombre entier et afficher si ce chi
 echo ("Même exercice que n°12, mais rajouter un message d'erreur si l'utilisateur n'entre pas un nombre entier<br>\n");
 
 /* Code à ajouter ci-dessous */ 
-
+var N=prompt("choisissez un nombre",'tapez votre nombre ici');
+ 
+    if (N%2==0) {
+        console.log("Votre chiffre est pair")
+    } else if (N%2==1) {
+        console.log("Votre chiffre est impair")
+    } else {
+        console.log("Rentrez à nouveau un nombre")
+    }
 
 
 
@@ -164,6 +181,17 @@ echo ("Même exercice que n°12, mais rajouter un message d'erreur si l'utilisat
 echo ("Demander à l'utilisateur d'entrer une année, et afficher si cette année est sextile ou bissextile<br>\n"); */
 
 /* Code à ajouter ci-dessous */
+var date=prompt("choisissez une date",'tapez votre date ici');
+
+var annee = new Date ();
+
+    if (annee%4==0) {
+        console.log("Votre année est sextile");
+    } else {
+        console.log("Votre année est bissextile");
+    }
+
+
 
 /* echo ("<br>\n<br>\n<br>\n====== EXO n°15 ======<br>\n<br>\n");
 echo ("Demander à l'utilisateur d'entrer une date, et afficher si cette date est valide ou non<br>\n"); */
@@ -171,4 +199,13 @@ echo ("Demander à l'utilisateur d'entrer une date, et afficher si cette date es
 
 /* Code à ajouter ci-dessous */
     
+var date=prompt("choisissez une date",'tapez votre date ici');
+
+var annee = new Date ();
+
+ if (annee>=2004) {
+     console.log("Vous avez plus de 18 ans cette année")
+ } else {
+     console.log("Vous avez plus de 18 ans cette année")
+ }
 

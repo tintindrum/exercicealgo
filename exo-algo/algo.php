@@ -199,6 +199,16 @@ echo ("<br>\n<br>\n<br>\n====== EXO n°13 ======<br>\n<br>\n");
 echo ("Même exercice que n°12, mais rajouter un message d'erreur si l'utilisateur n'entre pas un nombre entier<br>\n");
 /* Code à ajouter ci-dessous */
 
+$a = readline ('Entrez un nombre: ');
+
+    if (is_int($a%2==0)) {
+        echo "Votre chiffre est pair";
+    } elseif(is_int($a%2==1)) {
+     echo "Votre chiffre est impair" ; 
+    }
+    else {
+        echo "Réecrire un nombre";
+    }
 
 
 
@@ -207,8 +217,30 @@ echo ("<br>\n<br>\n<br>\n====== EXO n°14 ======<br>\n<br>\n");
 echo ("Demander à l'utilisateur d'entrer une année, et afficher si cette année est sextile ou bissextile<br>\n");
 /* Code à ajouter ci-dessous */
 
+$annee = readline ('Entrez votre année :');
+$annee = date('L');
+
+    if (date($annee%2==0)) {
+        echo "Votre année ' .$annee. ' est sextile";
+    } elseif (date($annee%2==1)) {
+        echo "Votre année ' .$annee. ' est bissextile";
+    } else {
+        echo "rentrez à nouveau une date";
+    }
+
 echo ("<br>\n<br>\n<br>\n====== EXO n°15 ======<br>\n<br>\n");
 echo ("Demander à l'utilisateur d'entrer une date, et afficher si cette date est valide ou non<br>\n");
 /* Code à ajouter ci-dessous */
+
+$date = readline ("Entrez votre date d'anniversaire : ");
+$date = date('d-m-Y');
+
+    if (date($annee>2004)) {
+        echo "Vous avez moins de 18ans";
+    } elseif (date($annee=2004)) {
+        echo "vous avez 18 ans cette année";
+    } else {
+        echo "vous avez plus de 18 ans cette année";
+    };
     
 
